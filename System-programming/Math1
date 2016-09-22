@@ -1,0 +1,12 @@
+//задача на математику 1
+double a, b, g, p, s;
+ Console.Write("Введите a:"); 
+ a = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите b:"); 
+ b = Convert.ToDouble(Console.ReadLine()); 
+ g = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2)); 
+ p = a + b + g; 
+ s = (a * b) / 2; 
+ Console.WriteLine("Периметр равен - " + p + "см"); 
+ Console.WriteLine("Площадь равна - " + s + "см2"); 
+ Console.ReadKey();

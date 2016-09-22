@@ -1,0 +1,11 @@
+//задача на математику 5
+double x, y, a, g; 
+ Console.Write("Введите первое число: "); 
+ x = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите первое число: "); 
+ y = Convert.ToDouble(Console.ReadLine()); 
+ a = (Math.Pow(x, 2) + Math.Pow(y, 2)) / 2; 
+ g = Math.Abs(Math.Sqrt(x * y)); 
+ Console.WriteLine("Среднее арефмитическое чисел равно - " + Math.Round(a, 2)); 
+ Console.WriteLine("Среднее геометрическое чисел равно - " + Math.Round(g, 2)); 
+ Console.ReadKey();

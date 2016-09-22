@@ -1,0 +1,13 @@
+//задача на математику 6
+double x1, x2, y1, y2, a; 
+ Console.Write("ВВедите точку x1: "); 
+ x1 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("ВВедите точку y1: "); 
+ y1 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("ВВедите точку x2: "); 
+ x2 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("ВВедите точку y2: "); 
+ y2 = Convert.ToDouble(Console.ReadLine()); 
+ a = Math.Abs(Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2))); 
+ Console.WriteLine("Длина отрезка равна - " + a); 
+ Console.ReadKey();

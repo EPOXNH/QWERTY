@@ -1,0 +1,22 @@
+//задача на математику 2
+double x1, x2, x3, y1, y2, y3, o1, o2, o3, p, s; 
+ Console.Write("Введите точку x1:"); 
+ x1 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите точку x2:"); 
+ x2 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите точку x3:"); 
+ x3 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите точку y1:"); 
+ y1 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите точку y2:"); 
+ y2 = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите точку y3:"); 
+ y3 = Convert.ToDouble(Console.ReadLine()); 
+ o1 = Math.Abs(Math.Sqrt(Math.Pow((x2 - x1),2) + Math.Pow((y2 - y1),2))); 
+ o2 = Math.Abs(Math.Sqrt(Math.Pow((x3 - x2),2) + Math.Pow((y3 - y2),2))); 
+ o3 = Math.Abs(Math.Sqrt(Math.Pow((x1 - x3),2) + Math.Pow((y1 - y3),2))); 
+ p = o1 + o2 + o3; 
+ s = Math.Sqrt((p/2)*((p/2)-o1)-((p/2)-o2)-((p/2)-o3)); 
+ Console.WriteLine("Периметр равен - " + Math.Round(p, 2) + "см"); 
+ Console.WriteLine("Площадь равна - " + Math.Round(s, 2) + "см2"); 
+ Console.ReadKey();

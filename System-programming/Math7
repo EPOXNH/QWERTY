@@ -1,0 +1,15 @@
+//задача на математику 7
+double x, y, s, r, p, c; 
+ Console.Write("Введите первое число: "); 
+ x = Convert.ToDouble(Console.ReadLine()); 
+ Console.Write("Введите второе число: "); 
+ y = Convert.ToDouble(Console.ReadLine()); 
+ s = x + y; 
+ r = x - y; 
+ p = x * y; 
+ c = x / y; 
+ Console.WriteLine("Сумма ваших чисел - " + s); 
+ Console.WriteLine("Разность ваших чисел - " + r); 
+ Console.WriteLine("Произведение ваших чисел - " + p); 
+ Console.WriteLine("Частное ваших чисел - " + c); 
+ Console.ReadKey();

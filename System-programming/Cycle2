@@ -1,0 +1,10 @@
+// задача на циклы
+ int i = 3, a = 1;
+do
+{
+Console.WriteLine("Колличество амеб на " + i + " часу - " + a);
+a = a * 2;
+i+=3;
+}
+while (i < 25);
+Console.ReadKey();

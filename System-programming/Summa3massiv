@@ -1,0 +1,17 @@
+Random r = new Random();
+            int n, s, x = 0;
+            int[] a;
+            n = r.Next(1, 40);
+            a = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                a[i] = r.Next(0, 100);
+                Console.Write(a[i] + " ");
+            }
+            Console.WriteLine();
+            for (int j = 1; j < n - 1; j++)
+            {
+                s = a[j - 1] + a[j] + a[j + 1];
+                Console.WriteLine("Сумма " + j + ", " + (j + 1) + ", " + (j + 2) + " эллементов массива равна - " + s);
+            }
+            Console.ReadKey();
